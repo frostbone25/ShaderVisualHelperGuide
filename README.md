@@ -17,12 +17,12 @@ A simple documentation repository containing a collection of notes and screensho
 This is showing a normalized UV screen coordinate. Normalized meaning it's values between ***(0...1)***. It is comprised of two vectors, x and y. 
 
 In DirectX convention...
-- X / R / Horizontal Axis: From Left to Right is 0 to 1
-- Y / G / Vertical Axis: From Up to Down is 0 to 1
+- X / R / Horizontal Axis: Left to Right is 0 to 1
+- Y / G / Vertical Axis: Up to Down is 0 to 1
 
 In OpenGL convention...
-- X / R / Horizontal Axis: From Left to Right is 0 to 1
-- Y / G / Vertical Axis: From Up to Down is 1 to 0
+- X / R / Horizontal Axis: Left to Right is 0 to 1
+- Y / G / Vertical Axis: Up to Down is 1 to 0
 
 # World Position
 
@@ -33,6 +33,8 @@ In OpenGL convention...
 This is showing a world position vector, comprised of 3 components that are visible ***(x, y z)***. These are not normalized, so values are expected to go beyond (0...1) or (-1...1) depending on the scale of your world.
 
 Looking at world origin (0, 0, 0) should remain black. Moving from there should faill into colors, and the rate at which values change should be linear.
+
+***NOTE: They should not change orientation/color when you move the camera***
 
 # World Normals
 
@@ -53,6 +55,8 @@ Which makes them less contrasty and look brighter/smoother. Direction vectors ho
 ```HLSL
 unpackedNormal = packedNormal * 2.0f + 1.0f;
 ```
+
+***NOTE: They should not change orientation/color when you move the camera***
 
 # End
 
