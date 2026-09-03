@@ -10,7 +10,7 @@ A simple documentation repository containing a collection of notes and screensho
 
 #### DirectX
 
-![screen-uv-normalized-directx.png](content/screen-uv-normalized-directx.png)
+![screen-uv-normalized-directx.png](content/directx-screen-uv-normalized.png)
 
 This is showing a normalized UV screen coordinate. Normalized meaning it's values between ***(0...1)***. It is comprised of two vectors, x and y. 
 
@@ -20,13 +20,21 @@ In DirectX convention...
 
 #### OpenGL
 
-![screen-uv-normalized-directx.png](content/screen-uv-normalized-opengl.png)
+![screen-uv-normalized-directx.png](content/opengl-screen-uv-normalized.png)
 
 This is showing a normalized UV screen coordinate. Normalized meaning it's values between ***(0...1)***. It is comprised of two vectors, x and y. 
 
 In OpenGL convention...
 - X / R / Horizontal Axis: From Left to Right is 0 to 1
 - Y / G / Vertical Axis: From Up to Down is 1 to 0
+
+# World Normals
+
+#### OpenGL
+
+![screen-uv-normalized-directx.png](content/opengl-world-normals_camera.png)
+
+This is showing a world position vector, comprised of 3 components that are visible ***(x, y z)***. These are not normalized, so values are expected to go beyond (0...1) or (-1...1) depending on the scale of your scene.
 
 # End
 
