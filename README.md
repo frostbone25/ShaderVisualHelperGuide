@@ -2,7 +2,11 @@
 
 A simple documentation repository containing a collection of notes and screenshots to assist with shader development when checking vectors and how they should look when displayed visually. Often times we can forget what certain vectors are supposed to look like visually when checking terms.
 
-### Screen UVs
+#### Table of Contents
+
+- [Screen UVs](#screen-uvs)
+
+# Screen UVs
 
 #### DirectX
 
