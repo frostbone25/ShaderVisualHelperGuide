@@ -10,21 +10,15 @@ A simple documentation repository containing a collection of notes and screensho
 
 # Screen UVs
 
-#### DirectX
-
-![directx-screen-uv-normalized](content/directx-screen-uv-normalized.png)
+| DirectX                                       | OpenGL                                       |
+| --------------------------------------------- | -------------------------------------------- |
+| ![](content/directx-screen-uv-normalized.png) | ![](content/opengl-screen-uv-normalized.png) |
 
 This is showing a normalized UV screen coordinate. Normalized meaning it's values between ***(0...1)***. It is comprised of two vectors, x and y. 
 
 In DirectX convention...
 - X / R / Horizontal Axis: From Left to Right is 0 to 1
 - Y / G / Vertical Axis: From Up to Down is 0 to 1
-
-#### OpenGL
-
-![opengl-screen-uv-normalized](content/opengl-screen-uv-normalized.png)
-
-This is showing a normalized UV screen coordinate. Normalized meaning it's values between ***(0...1)***. It is comprised of two vectors, x and y. 
 
 In OpenGL convention...
 - X / R / Horizontal Axis: From Left to Right is 0 to 1
