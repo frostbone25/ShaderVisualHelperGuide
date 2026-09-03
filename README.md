@@ -32,9 +32,9 @@ In OpenGL convention...
 
 This is showing a world position vector, comprised of 3 components that are visible ***(x, y z)***. These are not normalized, so values are expected to go beyond (0...1) or (-1...1) depending on the scale of your world.
 
-Looking at world origin (0, 0, 0) should remain black. Moving from there should faill into colors, and the rate at which values change should be linear.
+Looking at world origin (0, 0, 0) should remain black. Moving from there should fall into colors, and the rate at which values change should be linear.
 
-***NOTE: They should not change orientation/color when you move the camera***
+***IMPORTANT NOTE: They should not change value or color when you move/rotate the camera, they should remain in place regardless of where you move the camera.***
 
 # World Normals
 
@@ -56,7 +56,29 @@ Which makes them less contrasty and look brighter/smoother. Direction vectors ho
 unpackedNormal = packedNormal * 2.0f + 1.0f;
 ```
 
-***NOTE: They should not change orientation/color when you move the camera***
+***IMPORTANT NOTE: They should not change value/color/orientation when you move/rotate the camera, they should remain in place regardless of where you move the camera.***
+
+# View Normals
+
+#### OpenGL
+
+![opengl-view-normals_camera](content/opengl-view-normals_camera.png)
+
+This is showing a view normal vector, comprised of 3 components that are visible ***(x, y z)***. These are normalized but within (-1...1) range, so some areas may appear black. 
+
+Usually normal vectors when stored in textures or render targets, they are encoded and scaled within (0...1) range by doing...
+
+```HLSL
+packedNormal = normal * 0.5f + 0.5f;
+```
+
+Which makes them less contrasty and look brighter/smoother. Direction vectors however are expected to be in (-1...1) range so to unpack them...
+
+```HLSL
+unpackedNormal = packedNormal * 2.0f + 1.0f;
+```
+
+***IMPORTANT NOTE: They should change value/color/orientation when you rotate the camera. ***
 
 # End
 
