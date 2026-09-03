@@ -1,6 +1,6 @@
 # ShaderVisualHelperGuide
 
-A simple documentation repository containing a collection of notes to assist with shader development and checking vectors and how they should look visually. Often times during shader development, we can forget what certain vectors are supposed to look like visually when we are checking the terms.
+A simple documentation repository containing a collection of notes and screenshots to assist with shader development when checking vectors and how they should look when displayed visually. Often times we can forget what certain vectors are supposed to look like visually when checking terms.
 
 ### Screen UVs
 
@@ -26,4 +26,4 @@ In OpenGL convention...
 
 # End
 
-More to come in the future for different common shader terms.
+More to come in the future for different common shader terms, any corrections or additions just make a pull request.
