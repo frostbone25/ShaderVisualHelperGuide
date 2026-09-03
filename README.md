@@ -1,6 +1,6 @@
-# ShaderVisualHelperGuide
+# Shader Visual Helper Guide
 
-A simple documentation repository containing a collection of notes and screenshots to assist with shader development when checking vectors and how they should look when displayed visually. Often times we can forget what certain vectors are supposed to look like visually when checking terms.
+A simple documentation repository containing a collection of notes and screenshots to assist with shader development when checking vectors and how they should look or behave when displayed visually. Often times we can forget what certain vectors are supposed to look like visually when checking terms.
 
 #### Table of Contents
 
@@ -79,7 +79,7 @@ Which makes them less contrasty and look brighter/smoother. Direction vectors ho
 unpackedNormal = packedNormal * 2.0f + 1.0f;
 ```
 
-***IMPORTANT NOTE: They should change value/color/orientation when you rotate the camera. ***
+***IMPORTANT NOTE: They should change value/color/orientation when you rotate the camera.***
 
 # End
 
