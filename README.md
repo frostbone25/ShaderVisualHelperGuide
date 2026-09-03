@@ -28,11 +28,11 @@ In OpenGL convention...
 - X / R / Horizontal Axis: From Left to Right is 0 to 1
 - Y / G / Vertical Axis: From Up to Down is 1 to 0
 
-# World Normals
+# World Position
 
 #### OpenGL
 
-![screen-uv-normalized-directx.png](content/opengl-world-normals_camera.png)
+![screen-uv-normalized-directx.png](content/opengl-world-position.png)
 
 This is showing a world position vector, comprised of 3 components that are visible ***(x, y z)***. These are not normalized, so values are expected to go beyond (0...1) or (-1...1) depending on the scale of your scene.
 
