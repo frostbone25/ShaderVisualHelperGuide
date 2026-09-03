@@ -51,7 +51,9 @@ Usually normal vectors when stored in textures or render targets, they are encod
 packedNormal = normal * 0.5f + 0.5f;
 ```
 
-Which makes them less contrasty and look brighter/smoother. Direction vectors however are expected to be in (-1...1) range so to unpack them...
+This is usually done to fit them in 8bit UNORM textures, to save VRAM.
+
+It also makes them less contrasty and look brighter/smoother. Direction vectors however are expected to be in (-1...1) range so to unpack them...
 
 ```HLSL
 unpackedNormal = packedNormal * 2.0f + 1.0f;
@@ -72,6 +74,8 @@ Usually normal vectors when stored in textures or render targets, they are encod
 ```HLSL
 packedNormal = normal * 0.5f + 0.5f;
 ```
+
+This is usually done to fit them in 8bit UNORM textures, to save VRAM.
 
 Which makes them less contrasty and look brighter/smoother. Direction vectors however are expected to be in (-1...1) range so to unpack them...
 
