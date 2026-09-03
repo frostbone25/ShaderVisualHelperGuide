@@ -5,6 +5,8 @@ A simple documentation repository containing a collection of notes and screensho
 #### Table of Contents
 
 - [Screen UVs](#screen-uvs)
+- [World Position](#world-position)
+- [World Normals](#world-normals)
 
 # Screen UVs
 
