@@ -56,7 +56,7 @@ This is usually done to fit them in 8bit UNORM textures, to save VRAM.
 It also makes them less contrasty and look brighter/smoother. Direction vectors however are expected to be in (-1...1) range so to unpack them...
 
 ```HLSL
-unpackedNormal = packedNormal * 2.0f + 1.0f;
+unpackedNormal = packedNormal * 2.0f - 1.0f;
 ```
 
 ***IMPORTANT NOTE: They should not change value/color/orientation when you move/rotate the camera, they should remain in place regardless of where you move the camera.***
@@ -80,7 +80,7 @@ This is usually done to fit them in 8bit UNORM textures, to save VRAM.
 Which makes them less contrasty and look brighter/smoother. Direction vectors however are expected to be in (-1...1) range so to unpack them...
 
 ```HLSL
-unpackedNormal = packedNormal * 2.0f + 1.0f;
+unpackedNormal = packedNormal * 2.0f - 1.0f;
 ```
 
 ***IMPORTANT NOTE: They should change value/color/orientation when you rotate the camera.***
